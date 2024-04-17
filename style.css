@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid {
+    max-width: 1920px;
+    width: 90vw;
+    margin: 0 auto;
+
+}
+
+.banner {
+    height: 100vh;
+    background-image: url(img/banner\ Site.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+header div.container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+
+    width: 210px;
+}
+
+.logo {
+ align-items: baseline;
+    margin: 50px;
+}
+
+.menu {
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu a {
+
+    color: white;
+
+}
+
+
+
+.fundo {
+
+    background: rgb(201, 204, 240);
+    background: linear-gradient(180deg, rgba(201, 204, 240, 1) 0%, rgba(196, 225, 238, 1) 19%, rgba(196, 224, 238, 1) 46%, rgba(213, 221, 220, 1) 72%, rgba(237, 217, 195, 1) 100%);
+}
