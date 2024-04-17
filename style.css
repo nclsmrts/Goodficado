@@ -1,59 +1,105 @@
+:root {
+    --laranja-goodficado: #F06437;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container-grid {
-    max-width: 1920px;
-    width: 90vw;
-    margin: 0 auto;
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    background: linear-gradient(180deg, rgba(201, 204, 240, 1) 0%, rgba(196, 225, 238, 1) 19%, rgba(196, 224, 238, 1) 46%, rgba(213, 221, 220, 1) 72%, rgba(237, 217, 195, 1) 100%);
+}
+
+.container-grid {
+    width: 69vw;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .banner {
-    height: 100vh;
-    background-image: url(img/banner\ Site.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(img/banner.png);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: block;
+}
 
+header {
+    height: 124px;
 }
 
 header div.container-grid {
     height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header img {
-
-    width: 210px;
 }
 
 .logo {
- align-items: baseline;
-    margin: 50px;
+    width: 177px;
+    height: 87px;
+    margin-top: 31px;
+    align-items: flex-start;
 }
 
 .menu {
-    height: 700px;
+    width: 1300px;
+    margin-top: 31px;
+    background-color: rgba(19, 81, 110, 0.65);
     display: flex;
+    justify-content: center;
     justify-content: space-between;
-
+    margin-left: 60px;
+    border-radius: 10px;
 }
 
 .menu a {
-
+    padding: 37px;
     color: white;
-
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 500ms ease;
+    font-size: 20px;
 }
 
+.menu a:hover {
+    text-decoration-color: white;
+}
 
+.frase-banner {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: right;
+    margin-top: 380px;
+    background-color: rgba(19, 81, 110, 0.65);
+}
 
-.fundo {
+.conteudo-banner {
+    height: calc(100vh - 280px);
+    display: flex;
+    align-items: center;
+}
 
-    background: rgb(201, 204, 240);
-    background: linear-gradient(180deg, rgba(201, 204, 240, 1) 0%, rgba(196, 225, 238, 1) 19%, rgba(196, 224, 238, 1) 46%, rgba(213, 221, 220, 1) 72%, rgba(237, 217, 195, 1) 100%);
+.cases {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nome-empresa {
+    margin-top: 30px;
+    width: 35vw;
+    align-self: center;
+}
+
+.card {
+   color: rgba(245, 171, 86, 0.55);
+  display: flex;
+  justify-content: center;
 }
