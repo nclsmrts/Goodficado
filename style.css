@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Allerta";
+    src: url(fonts/Allerta-Regular.ttf);
+}
+
+@font-face {
+    font-family: "fredoka";
+    src: url(fonts/fredoka/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+
 :root {
     --laranja-goodficado: #F06437;
 }
@@ -65,6 +75,7 @@ header div.container-grid {
     text-decoration-thickness: 2px;
     transition: text-decoration 500ms ease;
     font-size: 20px;
+    font-family: "fredoka";
 }
 
 .menu a:hover {
@@ -86,10 +97,11 @@ header div.container-grid {
     align-items: center;
 }
 
-.cases {
+#cases {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 50px;
 }
 
 .nome-empresa {
@@ -98,8 +110,50 @@ header div.container-grid {
     align-self: center;
 }
 
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
 .card {
-   color: rgba(245, 171, 86, 0.55);
-  display: flex;
-  justify-content: center;
+    height: 550px;
+    width: 550px;
+    margin: 0 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(245, 171, 86, 0.3);
+}
+
+.card img {
+    display: flex;
+    padding-top: 20px;
+    height: 303px;
+    width: 264px;
+}
+
+.card button {
+    background-color: var(--laranja-goodficado);
+    border: none;
+    height: 85px;
+    width: 210px;
+    border-radius: 20px;
+    font-size: 27px;
+    font-family: "Allerta";
+}
+
+.card button:hover {
+    background-color: #CD532B;
+}
+
+#cases h2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: unset;
+    font-size: 50px;
+    color: white;
 }
