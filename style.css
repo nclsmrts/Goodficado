@@ -8,6 +8,11 @@
     src: url(fonts/fredoka/Fredoka-VariableFont_wdth\,wght.ttf);
 }
 
+@font-face {
+    font-family: "Allerta-Stencil";
+    src: url(fonts/Allerta_Stencil/AllertaStencil-Regular.ttf);
+}
+
 :root {
     --laranja-goodficado: #F06437;
 }
@@ -102,10 +107,13 @@ header div.container-grid {
     flex-direction: column;
     justify-content: center;
     padding: 0 50px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
 }
 
 .nome-empresa {
-    margin-top: 30px;
+    margin-top: 40px;
     width: 35vw;
     align-self: center;
 }
@@ -114,34 +122,35 @@ header div.container-grid {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    justify-content: space-around;
+    margin-top: 70px;
 }
 
 .card {
     height: 550px;
-    width: 550px;
-    margin: 0 15px;
+    width: 350px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background-color: rgba(245, 171, 86, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
-    display: flex;
+    margin-bottom: 30px;
     padding-top: 20px;
-    height: 303px;
-    width: 264px;
+    width: 80%;
 }
 
 .card button {
     background-color: var(--laranja-goodficado);
     border: none;
-    height: 85px;
+    height: 70px;
     width: 210px;
-    border-radius: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
     font-size: 27px;
     font-family: "Allerta";
 }
@@ -153,7 +162,157 @@ header div.container-grid {
 #cases h2 {
     display: flex;
     justify-content: space-between;
-    flex-direction: unset;
-    font-size: 50px;
-    color: white;
+    font-size: 31px;
+    font-family: "Allerta-Stencil";
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+#sobre {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteudo-sobre {
+    background-color: rgba(236, 202, 158, 0.53);
+    border-radius: 15px;
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#sobre h2 {
+    display: flex;
+    justify-content: center;
+
+    font-size: 32px;
+    font-family: "Allerta";
+
+}
+
+#sobre p {
+    align-items: center;
+    font-size: 22px;
+    margin: 0 40px;
+
+    font-family: "fredoka";
+}
+
+#portfolio {
+    width: 100%;
+}
+
+.conteudo-portfolio {
+    background-color: rgba(236, 202, 158, 0.53);
+    border-radius: 15px;
+    height: 300px;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.conteudo-portfolio h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    padding-top: 35px;
+    font-size: 32px;
+    font-family: "Allerta";
+
+}
+
+.textop {
+    display: flex;
+    justify-content: space-around;
+}
+
+.textop p {
+    width: 60%;
+    font-size: 22px;
+    font-family: "fredoka";
+}
+
+.textop button {
+    background-color: var(--laranja-goodficado);
+    border: none;
+    border-radius: 10px;
+    width: 121px;
+    height: 75px;
+    font-size: 27px;
+    font-family: "Allerta";
+}
+
+#case-1 {
+    width: 100%;
+
+}
+
+#case-1 h2 {
+    font-size: 40px;
+    font-family: "Allerta-Stencil";
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 170px;
+}
+
+.conteudo-case-1 {
+    display: flex;
+    justify-content: right;
+}
+
+.conteudo-case-1 img {
+    height: 71vh;
+    width: 34vw;
+    border-radius: 15px;
+    margin-right: 50px;
+}
+
+.p p {
+    background-color: rgba(236, 202, 158, 0.53);
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: "fredoka";
+    padding: 25px 25px;
+    margin: 25vh 30px;
+}
+
+#case-2 {
+    width: 100%;
+}
+
+.case2 {
+    display: flex;
+    align-items: center;
+}
+#case-2 h2{
+    font-size: 40px;
+    font-family: "Allerta-Stencil";
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 170px;
+}
+
+.case2 img{
+    height: 71vh;
+    width: 34vw;
+    border-radius: 15px;
+   margin-left: 50px;
+}
+
+.case2 p {
+    font-size: 25px;
+    font-family: "fredoka";
+    margin-left: 30px;
+    margin-left: 50px;
+    padding: 24px;
+    border-radius: 15px;
+    background-color: rgba(236, 202, 158, 0.53);
 }
