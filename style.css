@@ -15,6 +15,7 @@
 
 :root {
     --laranja-goodficado: #F06437;
+    --azul-goodficado: #217EA8;
 }
 
 * {
@@ -38,7 +39,8 @@ body {
 }
 
 .banner {
-    background-image: url(img/banner.png);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.45) 0%, rgba(0, 0, 0, 0.45) 49%, rgba(0, 0, 0, 0.45) 100%);
+    background-image: url(img/banner-pret.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -178,7 +180,18 @@ header div.container-grid {
     height: 800px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#sobre svg{
+    height: 400px;
+    display: flex;
+    color: var(--laranja-goodficado);
+}
+
+#sobre svg:hover{
+    color: #217EA8;
 }
 
 .conteudo-sobre {
@@ -189,7 +202,7 @@ header div.container-grid {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
+    
 }
 
 #sobre h2 {
@@ -259,7 +272,16 @@ header div.container-grid {
 
 #case-1 {
     width: 100%;
+}
 
+.conteudo-case-1 svg{
+    height: 400px;
+    display: flex;
+    color: var(--laranja-goodficado);
+}
+
+.conteudo-case-1 svg:hover{
+    color: #217EA8;
 }
 
 #case-1 h2 {
@@ -361,6 +383,15 @@ header div.container-grid {
     width: 100%;
 }
 
+#contato svg{
+    color: var(--laranja-goodficado);
+    height: 400px;
+}
+
+#contato svg:hover{
+    color: var(--azul-goodficado);
+}
+
 .usuario {
     display: flex;
     align-items: center;
@@ -383,13 +414,13 @@ header div.container-grid {
 
 .conteudo-contato img {
     width: 15%;
-
+    margin-bottom: 50px;
 }
 
 .campo {
+    display: flex;
+    flex-direction: column;
     font-family: "fredoka";
-    font-size: 20px;
-    background-color: rgba(245, 171, 86, 0.76);
     margin-bottom: 20px;
     margin-left: 20px;
     padding: 10px;
@@ -398,15 +429,85 @@ header div.container-grid {
 }
 
 .campo input {
+    height: 50px;
+    width: 100%;
     border-radius: 5px;
     border: none;
     outline: none;
     text-indent: 10px;
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px 0;
     margin-left: 10px;
+    background-color: rgba(245, 171, 86, 0.76);
+}
+
+.campo label {
+    padding-bottom: 20px;
+    margin-left: 8px;
+    font-size: 25px;
 }
 
 .campo input:focus {
     outline: 2px solid #F06437;
+}
+
+.conteudo-contato button {
+    outline: none;
+    font-size: 25px;
+    font-family: "fredoka";
+    background-color: #F06437;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.conteudo-contato button:hover {
+    background-color: #CD532B;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+footer img {
+    height: 71px;
+    align-self: center;
+}
+
+.conteudo-footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.icones svg {
+    margin: 0 17px;
+}
+
+.icones a {
+    color: var(--laranja-goodficado);
+}
+
+.conteudo-footer h2 {
+    font-family: "allerta";
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.conteudo-footer a{
+    font-family: "fredoka";
+    font-size: 20px;
+    text-align: center;
+    color: var(--laranja-goodficado);
+}
+
+.conteudo-footer a:hover {
+    color: var(--azul-goodficado);
 }
