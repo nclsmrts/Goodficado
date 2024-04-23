@@ -77,12 +77,13 @@ header div.container-grid {
 
 .menu a {
     padding: 37px;
+    padding-bottom: 40px;
     color: white;
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
     transition: text-decoration 500ms ease;
     font-size: 20px;
-    font-family: "fredoka";
+    font-family: "Allerta";
 }
 
 .menu a:hover {
@@ -383,15 +384,6 @@ header div.container-grid {
     width: 100%;
 }
 
-#contato svg{
-    color: var(--laranja-goodficado);
-    height: 400px;
-}
-
-#contato svg:hover{
-    color: var(--azul-goodficado);
-}
-
 .usuario {
     display: flex;
     align-items: center;
@@ -415,6 +407,7 @@ header div.container-grid {
 .conteudo-contato img {
     width: 15%;
     margin-bottom: 50px;
+    margin-right: 25px;
 }
 
 .campo {
@@ -478,6 +471,7 @@ footer {
 footer img {
     height: 71px;
     align-self: center;
+    margin-right: 150px;
 }
 
 .conteudo-footer {
