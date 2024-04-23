@@ -16,6 +16,7 @@
 :root {
     --laranja-goodficado: #F06437;
     --azul-goodficado: #217EA8;
+    --laranja-hover: #AB4624;
 }
 
 * {
@@ -33,7 +34,7 @@ body {
 }
 
 .container-grid {
-    width: 69vw;
+    width: 66%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -55,6 +56,11 @@ header {
 header div.container-grid {
     height: 100%;
     display: flex;
+}
+
+#menu-site{
+
+    display: none;
 }
 
 .logo {
@@ -164,7 +170,7 @@ header div.container-grid {
 }
 
 .card a:hover {
-    background-color: #CD532B;
+    background-color: var(--laranja-hover);
 }
 
 #cases h2 {
@@ -185,13 +191,13 @@ header div.container-grid {
     align-items: center;
 }
 
-#sobre svg{
+#sobre svg {
     height: 400px;
     display: flex;
     color: var(--laranja-goodficado);
 }
 
-#sobre svg:hover{
+#sobre svg:hover {
     color: #217EA8;
 }
 
@@ -203,7 +209,7 @@ header div.container-grid {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+
 }
 
 #sobre h2 {
@@ -268,20 +274,20 @@ header div.container-grid {
 }
 
 .textop button:hover {
-    background-color: #CD532B;
+    background-color: var(--laranja-hover);
 }
 
 #case-1 {
     width: 100%;
 }
 
-.conteudo-case-1 svg{
+.conteudo-case-1 svg {
     height: 400px;
     display: flex;
     color: var(--laranja-goodficado);
 }
 
-.conteudo-case-1 svg:hover{
+.conteudo-case-1 svg:hover {
     color: #217EA8;
 }
 
@@ -400,14 +406,31 @@ header div.container-grid {
 .conteudo-contato {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: 71px;
+}
+
+.conteudo-contato svg {
+    display: flex;
+    align-items: flex-end;
+    color: var(--laranja-goodficado);
+}
+
+.conteudo-contato svg:hover {
+    color: var(--azul-goodficado);
 }
 
 .conteudo-contato img {
     width: 15%;
     margin-bottom: 50px;
     margin-right: 25px;
+}
+
+.conteudo-contato form {
+    margin-right: 130px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .campo {
@@ -457,7 +480,7 @@ header div.container-grid {
 }
 
 .conteudo-contato button:hover {
-    background-color: #CD532B;
+    background-color: var(--laranja-hover);
 }
 
 footer {
@@ -495,7 +518,7 @@ footer img {
     text-align: center;
 }
 
-.conteudo-footer a{
+.conteudo-footer a {
     font-family: "fredoka";
     font-size: 20px;
     text-align: center;
@@ -504,4 +527,92 @@ footer img {
 
 .conteudo-footer a:hover {
     color: var(--azul-goodficado);
+}
+
+@media screen and (max-width:1300px) {
+    .card {
+        height: 500px;
+        width: 300px;
+    }
+
+    .conteudo-contato form {
+        margin-right: 70px;
+    }
+
+    .icones svg {
+        margin: 0;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        width: 400px;
+        height: 300px;
+    }
+
+    .menu a {
+        padding: 0 10px;
+        font-size: 25px;
+    }
+
+    .logo {}
+
+    .card {
+        height: 400px;
+        width: 230px;
+    }
+
+    .card a {
+        width: 160px;
+        padding-top: 3px;
+    }
+
+    #sobre svg,
+    .conteudo-contato svg {
+        display: none;
+    }
+
+    #sobre p {
+        font-size: 20px;
+    }
+
+    .textop p {
+        font-size: 20px;
+    }
+
+    .conteudo-case-1 p {
+        font-size: 20px;
+    }
+
+    .case2 p,
+    .case3 p {
+        font-size: 20px;
+    }
+
+    .conteudo-contato {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icones svg {
+        width: 40px;
+    }
+
+    .conteudo-footer h2 {
+        font-size: 16px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .conteudo-footer {
+        display: flex;
+        justify-content: center;
+    }
 }
