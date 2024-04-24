@@ -58,7 +58,15 @@ header div.container-grid {
     display: flex;
 }
 
-#menu-site{
+.nome-logo {
+    display: none;
+}
+
+.mome-logo svg {
+    height: 70px;
+}
+
+#menu-site {
 
     display: none;
 }
@@ -109,6 +117,16 @@ header div.container-grid {
     height: calc(100vh - 280px);
     display: flex;
     align-items: center;
+}
+
+.cont-banner {
+    height: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.cont-banner img {
+    width: 100%;
 }
 
 #cases {
@@ -546,23 +564,18 @@ footer img {
 }
 
 @media screen and (max-width:1080px) {
+
     .menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        position: absolute;
-        top: 150px;
-        right: 0;
-        width: 400px;
-        height: 300px;
+        width: 1000px;
     }
 
     .menu a {
-        padding: 0 10px;
-        font-size: 25px;
-    }
+        font-size: 17px;
+        padding: 20px;
+        display: flex;
+        align-self: center;
 
-    .logo {}
+    }
 
     .card {
         height: 400px;
@@ -574,13 +587,13 @@ footer img {
         padding-top: 3px;
     }
 
+    #sobre p {
+        font-size: 20px;
+    }
+
     #sobre svg,
     .conteudo-contato svg {
         display: none;
-    }
-
-    #sobre p {
-        font-size: 20px;
     }
 
     .textop p {
@@ -601,8 +614,15 @@ footer img {
         justify-content: center;
     }
 
+    .icones {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
     .icones svg {
         width: 40px;
+        height: 50px;
     }
 
     .conteudo-footer h2 {
@@ -614,5 +634,80 @@ footer img {
     .conteudo-footer {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .banner {
+        background-size: 130vw 100vh;
+    }
+
+    header {
+        background-color: #13516E;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .container-grid {
+        width: 100%;
+    }
+
+    .nome-logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nome-logo svg {}
+
+    .nome-logo button {
+        border-radius: 15px;
+        border: none;
+        background: none;
+        color: var(--laranja-goodficado);
+
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 86px;
+        right: 0;
+        width: 400px;
+        height: 300px;
+    }
+
+    #cases {
+        align-items: center;
+        height: 2800px;
+      
+    }
+
+    .cards {
+        flex-direction: column;
+        height: 400px;
+        width: 350px;
+    }
+
+    .card{
+        width: 500px;
+        margin-bottom: 150px;
+    }
+
+    .card img{
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #case-1,
+    #case-2,
+    #case-3{
+        display: none;
     }
 }
