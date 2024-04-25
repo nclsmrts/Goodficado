@@ -156,6 +156,7 @@ header div.container-grid {
 .card {
     height: 550px;
     width: 350px;
+    width: 28%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -684,30 +685,70 @@ footer img {
 
     #cases {
         align-items: center;
-        height: 2800px;
-      
     }
 
     .cards {
         flex-direction: column;
-        height: 400px;
         width: 350px;
     }
 
-    .card{
+    .card {
         width: 500px;
-        margin-bottom: 150px;
+        height: 500px;
+        margin-bottom: 130px;
     }
 
-    .card img{
-        width: 50%;
+    .card img {
+        width: 60%;
+        height: 320px;
         padding: 0;
         margin: 0;
     }
 
+    .card a {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    #sobre {
+        height: 600px;
+    }
+
+    .conteudo-sobre {
+        height: 100%;
+    }
+
+    .conteudo-portfolio {
+        margin-bottom: 100px;
+    }
+
     #case-1,
     #case-2,
-    #case-3{
+    #case-3 {
         display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    footer img{
+        margin: 0;
+    }
+
+    .conteudo-footer h2{
+        display: flex;
+       justify-content: center;
+    }
+
+    .icones{
+        width: 100%;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: flex-end ;
     }
 }
