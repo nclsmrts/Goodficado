@@ -196,6 +196,10 @@ header button {
     background-color: var(--laranja-hover);
 }
 
+.sobre-card{
+    display: none;
+}
+
 #cases h2 {
     display: flex;
     justify-content: space-between;
@@ -570,6 +574,10 @@ footer img {
 
 @media screen and (max-width:1080px) {
 
+    header button {
+        display: unset;
+    }
+
     .menu {
         width: 1000px;
     }
@@ -648,7 +656,7 @@ footer img {
 
 @media screen and (max-width:800px) {
     .banner {
-        background-size: 780px 600px;
+        background-size: 815px 600px;
     }
 
     header {
@@ -710,6 +718,7 @@ footer img {
     }
 
     .card {
+        display: none;
         width: 500px;
         height: 500px;
         margin-bottom: 130px;
@@ -729,16 +738,38 @@ footer img {
         font-size: 30px;
     }
 
+    .sobre-card{
+        display: flex;
+        justify-content: center;
+        height: 500px;
+        width: 500px;
+        margin-bottom: 130px;
+        border-radius: 15px;
+        background-color: #ECCA9E;
+    }
+
+    .sobre-card p{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 77%;
+        font-size: 25px;
+        font-family: "fredoka";
+    }
+
     #sobre {
         height: 600px;
     }
 
     .conteudo-sobre {
         height: 100%;
+        border-radius: 0;
     }
 
     .conteudo-portfolio {
         margin-bottom: 100px;
+        border-radius: 0;
+        background-color: rgb(251 184 97 / 53%);
     }
 
     #case-1,
@@ -789,7 +820,12 @@ footer img {
         padding-top: 10px;
     }
 
+    .nome-empresa{
+        width: 45vw;
+    }
+
     .card {
+        display: flex;
         width: 300px;
         height: 300px;
         margin-bottom: 100px;
@@ -803,6 +839,17 @@ footer img {
     .card img {
         width: 50%;
         height: 280px;
+    }
+
+    .sobre-card{
+        display: none;
+        height: 300px;
+        width: 300px;
+        margin-bottom: 100px;
+    }
+
+    .sobre-card p{
+        font-size: 20px;
     }
 
     #sobre p {
@@ -838,7 +885,7 @@ footer img {
     }
 
     .nome-empresa {
-        width: 50vw;
+        width: 60vw;
         margin-bottom: 20px;
     }
 
@@ -888,11 +935,12 @@ footer img {
 @media screen and (max-width:400px) {
 
     .banner {
-        background-size: 500px 500px;
+        background-size: 500px 470px;
+        height: 90vh;
     }
 
     header button {
-        padding-left: 24px;
+        padding-left: 30px;
     }
 
     .menu {
@@ -901,6 +949,11 @@ footer img {
 
     .nome-logo img {
         width: 125%;
+        height: 50%;
+    }
+
+    .nome-empresa{
+        width: 69vw;
     }
 
     .cards {
@@ -910,6 +963,20 @@ footer img {
     .card {
         width: 200px;
         height: 250px;
+    }
+
+    .card a{
+        width: 120px;
+        font-size: 25px;
+    }
+
+    .sobre-card{
+        width: 200px;
+        height: 250px;
+    }
+
+    .sobre-card p{
+        font-size: 15px;
     }
 
     #sobre h2 {
@@ -922,7 +989,7 @@ footer img {
     }
 
     .conteudo-portfolio {
-        height: 400px;
+        height: 445px;
     }
 
     .conteudo-portfolio h2 {
