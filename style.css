@@ -683,7 +683,6 @@ footer img {
     }
 
     header button {
-        border-radius: 15px;
         border: none;
         background: none;
         color: var(--laranja-goodficado);
@@ -805,7 +804,7 @@ footer img {
     .banner {
 
         background-size: 630px 500px;
-        height: 100vh;
+        height: 700px;
     }
 
     .nome-logo img {
@@ -936,7 +935,7 @@ footer img {
 
     .banner {
         background-size: 500px 470px;
-        height: 90vh;
+        
     }
 
     header button {
