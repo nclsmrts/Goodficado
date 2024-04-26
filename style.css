@@ -196,7 +196,7 @@ header button {
     background-color: var(--laranja-hover);
 }
 
-.sobre-card{
+.sobre-card {
     display: none;
 }
 
@@ -737,7 +737,7 @@ footer img {
         font-size: 30px;
     }
 
-    .sobre-card{
+    .sobre-card {
         display: flex;
         justify-content: center;
         height: 500px;
@@ -747,7 +747,7 @@ footer img {
         background-color: #ECCA9E;
     }
 
-    .sobre-card p{
+    .sobre-card p {
         display: flex;
         align-items: center;
         height: 100%;
@@ -802,7 +802,7 @@ footer img {
 
 @media screen and (max-width:600px) {
     .banner {
-
+        background-size: cover;
         background-size: 630px 550px;
         height: 700px;
     }
@@ -810,7 +810,7 @@ footer img {
     .nome-logo img {
         height: 65px;
         height: 55%;
-        width: 60%;
+        
         display: unset;
     }
 
@@ -819,7 +819,7 @@ footer img {
         padding-top: 10px;
     }
 
-    .nome-empresa{
+    .nome-empresa {
         width: 45vw;
     }
 
@@ -840,14 +840,14 @@ footer img {
         height: 280px;
     }
 
-    .sobre-card{
+    .sobre-card {
         display: none;
         height: 300px;
         width: 300px;
         margin-bottom: 100px;
     }
 
-    .sobre-card p{
+    .sobre-card p {
         font-size: 20px;
     }
 
@@ -880,7 +880,7 @@ footer img {
 
 @media screen and (max-width:500px) {
     .nome-logo img {
-        width: 85%;
+        height: 45%;
     }
 
     .nome-empresa {
@@ -935,7 +935,7 @@ footer img {
 
     .banner {
         background-size: 500px 470px;
-        
+
     }
 
     header button {
@@ -951,7 +951,7 @@ footer img {
         height: 50%;
     }
 
-    .nome-empresa{
+    .nome-empresa {
         width: 69vw;
     }
 
@@ -964,17 +964,17 @@ footer img {
         height: 250px;
     }
 
-    .card a{
+    .card a {
         width: 120px;
         font-size: 25px;
     }
 
-    .sobre-card{
+    .sobre-card {
         width: 200px;
         height: 250px;
     }
 
-    .sobre-card p{
+    .sobre-card p {
         font-size: 15px;
     }
 
