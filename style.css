@@ -144,8 +144,8 @@ header button {
 }
 
 .nome-empresa {
-    margin-top: 40px;
-    width: 35vw;
+    margin-top: 50px;
+    width: 28vw;
     align-self: center;
 }
 
@@ -243,14 +243,14 @@ header button {
     display: flex;
     justify-content: center;
 
-    font-size: 32px;
+    font-size: 30px;
     font-family: "Allerta";
 
 }
 
 #sobre p {
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
     margin: 0 40px;
 
     font-family: "fredoka";
@@ -274,7 +274,7 @@ header button {
     justify-content: center;
     margin-bottom: 60px;
     padding-top: 35px;
-    font-size: 32px;
+    font-size: 30px;
     font-family: "Allerta";
 
 }
@@ -286,7 +286,7 @@ header button {
 
 .textop p {
     width: 60%;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "fredoka";
 }
 
@@ -335,7 +335,7 @@ header button {
 .conteudo-case-1 p {
     background-color: rgba(236, 202, 158, 0.53);
     border-radius: 15px;
-    font-size: 25px;
+    font-size: 20px;
     font-family: "fredoka";
     padding: 25px 25px;
     margin: 0 30px;
@@ -375,7 +375,7 @@ header button {
 }
 
 .case2 p {
-    font-size: 25px;
+    font-size: 20px;
     font-family: "fredoka";
     margin: 0 30px;
     padding: 24px;
@@ -398,7 +398,7 @@ header button {
 }
 
 .case3 p {
-    font-size: 25px;
+    font-size: 20px;
     font-family: "fredoka";
     margin: 0 30px;
     padding: 24px;
@@ -558,8 +558,8 @@ footer img {
 
 @media screen and (max-width:1300px) {
     .card {
-        height: 500px;
-        width: 300px;
+        height: 450px;
+        width: 260px;
     }
 
     .conteudo-contato form {
@@ -656,7 +656,7 @@ footer img {
 
 @media screen and (max-width:800px) {
     .banner {
-        background-size: 815px 600px;
+        background-position: center;
     }
 
     header {
@@ -699,7 +699,7 @@ footer img {
         position: absolute;
         top: 86px;
         right: 0;
-        width: 400px;
+        width: 300px;
         height: 400px;
     }
 
@@ -792,6 +792,10 @@ footer img {
         justify-content: center;
     }
 
+    .conteudo-footer a{
+        margin: 10px;
+    }
+
     .icones {
         width: 100%;
         margin-top: 30px;
@@ -803,14 +807,13 @@ footer img {
 @media screen and (max-width:600px) {
     .banner {
         background-size: cover;
-        background-size: 630px 550px;
-        height: 700px;
+        background-size: 680px 600px
     }
 
     .nome-logo img {
         height: 65px;
         height: 55%;
-        
+
         display: unset;
     }
 
@@ -879,6 +882,15 @@ footer img {
 }
 
 @media screen and (max-width:500px) {
+
+    .banner{
+        background-position: center;
+    }
+
+    header button {
+        width: auto;
+    }
+
     .nome-logo img {
         height: 45%;
     }
