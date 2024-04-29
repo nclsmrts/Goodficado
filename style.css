@@ -687,7 +687,7 @@ footer img {
         background: none;
         color: var(--laranja-goodficado);
         height: 125px;
-        width: 130px;
+        width: 115px;
     }
 
 
@@ -807,7 +807,7 @@ footer img {
 @media screen and (max-width:600px) {
     .banner {
         background-size: cover;
-        background-size: 680px 600px
+        background-size: 680px 408px;
     }
 
     .nome-logo img {
@@ -889,6 +889,7 @@ footer img {
 
     header button {
         width: auto;
+        margin-right: 10px;
     }
 
     .nome-logo img {
@@ -946,7 +947,7 @@ footer img {
 @media screen and (max-width:400px) {
 
     .banner {
-        background-size: 500px 470px;
+        background-size: 591px 405px;
 
     }
 
