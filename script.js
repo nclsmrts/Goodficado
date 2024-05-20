@@ -33,3 +33,51 @@ const mostrarcards = () => {
         conteudocard1.style.display = "none"
     }
 }
+
+
+
+
+
+
+
+// bglh do formulario
+
+const solicitarinputs = (event) => {
+
+    let valorcampoemail = document.getElementById("campo-email").value
+    let valorcamponome = document.getElementById("campo-nome").value
+    let valorcampotelefone = document.getElementById("campo-telefone").value
+
+    let dadosinput = {
+        nome: valorcamponome,
+        email: valorcampoemail,
+        telefone: valorcampotelefone
+    }
+
+    fetch("http://localhost:3000/solicitacao", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dadosinput)
+
+    })
+        .then(resposta => {
+            console.log(resposta)
+
+            // limoar campos
+
+            document.querySelector("#contato form").reset()
+
+            // mostrar alert com mensagem de sucesso
+            alert("Solicitação cadastrada")
+
+        })
+        .catch(erro => {
+            // caso erro mostrar alert com mensagem erro
+            console.log(erro)
+            alert("Erro desconhecido")
+        })
+
+    event.preventDefault()
+}
