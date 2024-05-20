@@ -176,7 +176,7 @@ header button {
     width: 80%;
 }
 
-.card a {
+.card button {
     background-color: var(--laranja-goodficado);
     border: none;
     height: 70px;
@@ -196,12 +196,22 @@ header button {
     background-color: var(--laranja-hover);
 }
 
+/* 
 .sobre-card {
+    display: none;
+} */
+
+#sobrecard2,
+#sobrecard3 {
+    display: none;
+}
+
+#sobrecard1 {
     display: none;
 }
 
 #cases h2 {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     font-size: 31px;
     font-family: "Allerta-Stencil";
@@ -556,7 +566,7 @@ footer img {
     color: var(--azul-goodficado);
 }
 
-.menu-aberto {
+.menu-fechado {
     display: none;
 }
 
@@ -717,6 +727,10 @@ footer img {
         font-size: 22px;
     }
 
+    .menu-fechado {
+        display: none;
+    }
+
     #cases {
         align-items: center;
     }
@@ -748,9 +762,16 @@ footer img {
         font-size: 30px;
     }
 
+    .card p {
+        display: none;
+    }
+
+
     .sobre-card {
         /* tirar o display flex para mostrar o conteudo dos cases */
-        /* display: flex; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         height: 500px;
         width: 500px;
@@ -762,11 +783,34 @@ footer img {
     .sobre-card p {
         display: flex;
         align-items: center;
-        height: 100%;
+        height: 77%;
         width: 77%;
         font-size: 25px;
         font-family: "fredoka";
     }
+
+    .sobre-card img,
+    .sobre-card h2,
+    .sobre-card a {
+        display: none;
+    }
+
+    .sobre-card button {
+        background-color: var(--laranja-goodficado);
+        border: none;
+        height: 70px;
+        width: 210px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+        font-size: 27px;
+        font-family: "Allerta";
+        color: black;
+        display: flex;
+        justify-content: center;
+        text-decoration: underline transparent;
+    }
+
 
     #sobre {
         height: 600px;
@@ -814,6 +858,7 @@ footer img {
         justify-content: center;
         align-items: flex-end;
     }
+
 }
 
 @media screen and (max-width:600px) {
@@ -1046,5 +1091,4 @@ footer img {
     .conteudo-contato button {
         font-size: 20px;
     }
-
 }
