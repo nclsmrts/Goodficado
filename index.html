@@ -21,18 +21,17 @@
                 <div class="button">
                     <button onclick="abrirfecharmenu()">
 
-                        <svg id="icone-menu" width="70px" height="70px" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-
                         <svg id="iconex" width="70px" height="70px" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 6L18 18M18 6L6 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
 
+                        <svg id="icone-menu" width="70px" height="70px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
                     </button>
 
                 </div>
@@ -53,37 +52,32 @@
     <section id="cases">
         <img src="img/Nome-da-empresa.png" alt="nome da empresa" class="nome-empresa">
         <div class="cards">
-            <div class="sobre-card" id="sobrecard1">
-                <p>Uma escola está desperdiçando muita comida, Esse mundo explicaria a forma que a empresa achou
-                    para reduzir o desperdício de comida, com pontuações e prêmios.</p>
-            </div>
-            <div class="sobre-card" id="sobrecard2">
-                <p>Uma empresa que teria problemas com o desempenho com funcionários. Esse mundo explicaria como a
-                    empresa aumentou o desempenho com os funcionários com uma competição interna valendo pontos.</p>
-            </div>
-            <div class="sobre-card" id="sobrecard3">
-                <p>Um escritório onde o próprio estaria bagunçado. Esse mundo explicaria como a empresa usou a
-                    gamificação para ajudar a organizar o escritório.
-                </p>
-            </div>
 
-            <div class="card" id="card1" >
+            <div class="card" id="card1">
                 <h2>Cases 1</h2>
                 <p>Uma escola está desperdiçando muita comida, Esse mundo explicaria a forma que a empresa achou
                     para reduzir o desperdício de comida, com pontuações e prêmios.</p>
                 <img src="img/case-1.png" alt="">
-                <button type="button"  onclick="mostrarcards()" id="botao" >sobre</button>
-               
+                <a href="#case-1">sobre</a>
+                <button type="button" onclick="mostrarcards()" id="botao">sobre</button>
+
             </div>
-            <div class="card">
+            <div class="card" id="card2">
                 <h2>Cases 2</h2>
+                <p>Uma empresa que tem problemas com o desempenho dos funcionários. Esse mundo explica como a
+                    empresa resolveu os problemas com os funcionários com uma competição.</p>
                 <img src="img/case-2.png" alt="">
                 <a href="#case-2">Sobre</a>
+                <button type="button" onclick="mostrarcards2()" id="botao2">sobre</button>
             </div>
-            <div class="card">
+            <div class="card" id="card3">
                 <h2>Cases 3</h2>
+                <p>Um escritório onde o próprio estaria bagunçado. Esse mundo explicaria como a empresa usou a
+                    gamificação para ajudar a organizar o escritório.
+                </p>
                 <img src=" img/case-3.png" alt="">
                 <a href="#case-3">Sobre</a>
+                <button type="button" onclick="mostrarcards3()" id="botao3">sobre</button>
             </div>
         </div>
     </section>

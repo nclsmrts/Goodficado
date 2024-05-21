@@ -20,10 +20,9 @@ const abrirfecharmenu = () => {
 
 }
 
-// fazer quando passar o mouse mostrar o conteudo do card
+// fazer quando clicar o mouse mostrar o conteudo do card
 
 let card = document.getElementById("card1")
-let botao = document.getElementById("botao")
 
 const mostrarcards = () => {
 
@@ -33,7 +32,32 @@ const mostrarcards = () => {
     } else {
         card.classList.add("card")
         card.classList.remove("sobre-card")
-        botao.innerHTML
+    }
+}
+
+let card2 = document.getElementById("card2")
+
+const mostrarcards2 = () => {
+
+    if (card2.classList.contains("card2")) {
+        card2.classList.remove("card2")
+        card2.classList.add("sobre-card")
+    } else {
+        card2.classList.add("card2")
+        card2.classList.remove("sobre-card")
+    }
+}
+
+let card3 = document.getElementById("card3")
+
+const mostrarcards3 = () => {
+
+    if (card3.classList.contains("card3")) {
+        card3.classList.remove("card3")
+        card3.classList.add("sobre-card")
+    } else {
+        card3.classList.add("card3")
+        card3.classList.remove("sobre-card")
     }
 }
 

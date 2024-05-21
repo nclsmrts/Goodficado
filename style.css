@@ -43,7 +43,6 @@ body {
     background: linear-gradient(90deg, rgba(2, 0, 36, 0.45) 0%, rgba(0, 0, 0, 0.45) 49%, rgba(0, 0, 0, 0.45) 100%);
     background-image: url(img/banner-pret.png);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     display: block;
@@ -182,6 +181,30 @@ header button {
     height: 70px;
     width: 210px;
     border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    font-size: 27px;
+    font-family: "Allerta";
+    color: black;
+    justify-content: center;
+    text-decoration: underline transparent;
+}
+
+.card a:hover {
+    background-color: var(--laranja-hover);
+}
+
+.card p {
+    display: none;
+}
+
+.card a {
+    background-color: var(--laranja-goodficado);
+    border: none;
+    height: 70px;
+    width: 210px;
+    border-radius: 12px;
     margin-bottom: 20px;
     padding-top: 15px;
     font-size: 27px;
@@ -190,10 +213,6 @@ header button {
     display: flex;
     justify-content: center;
     text-decoration: underline transparent;
-}
-
-.card a:hover {
-    background-color: var(--laranja-hover);
 }
 
 /* 
@@ -353,7 +372,6 @@ header button {
 }
 
 .conteudo-case-1 img {
-    height: 71vh;
     width: 34vw;
     border-radius: 15px;
     margin-right: 50px;
@@ -378,7 +396,6 @@ header button {
 }
 
 .case2 img {
-    height: 71vh;
     width: 34vw;
     border-radius: 15px;
     margin-left: 50px;
@@ -417,7 +434,6 @@ header button {
 }
 
 .case3 img {
-    height: 71vh;
     width: 34vw;
     border-radius: 15px;
     margin-right: 50px;
@@ -566,9 +582,9 @@ footer img {
     color: var(--azul-goodficado);
 }
 
-.menu-fechado {
+/* .menu-fechado {
     display: none;
-}
+} */
 
 .iconex {
     display: none;
@@ -578,6 +594,10 @@ footer img {
     .card {
         height: 450px;
         width: 260px;
+    }
+
+    .card p {
+        display: none;
     }
 
     .conteudo-contato form {
@@ -613,11 +633,28 @@ footer img {
         width: 230px;
     }
 
+    .card button {
+        display: none;
+    }
+
     .button {
         display: none;
     }
 
     .card a {
+        background-color: var(--laranja-goodficado);
+        border: none;
+        height: 70px;
+        width: 210px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+        font-size: 27px;
+        font-family: "Allerta";
+        color: black;
+        display: flex;
+        justify-content: center;
+        text-decoration: underline transparent;
         width: 160px;
         padding-top: 3px;
     }
@@ -735,6 +772,10 @@ footer img {
         align-items: center;
     }
 
+    .nome-empresa {
+        width: 45vw;
+    }
+
     .cards {
         flex-direction: column;
         width: 350px;
@@ -743,23 +784,27 @@ footer img {
     .card {
         /* mostrar o card tirar o display none */
         /* display: none; */
-        width: 500px;
+        width: 410px;
         height: 500px;
         margin-bottom: 130px;
     }
 
     .card img {
         width: 60%;
-        height: 320px;
         padding: 0;
         margin: 0;
     }
 
     .card a {
+        display: none;
         margin-top: 15px;
-        display: flex;
+        /* display: flex; */
         align-items: center;
         font-size: 30px;
+    }
+
+    .card button {
+        display: flex;
     }
 
     .card p {
@@ -774,7 +819,7 @@ footer img {
         align-items: center;
         justify-content: center;
         height: 500px;
-        width: 500px;
+        width: 410px;
         margin-bottom: 130px;
         border-radius: 15px;
         background-color: #ECCA9E;
@@ -865,6 +910,7 @@ footer img {
     .banner {
         background-size: cover;
         background-size: 680px 408px;
+        height: 99vh;
     }
 
     .nome-logo img {
@@ -900,15 +946,23 @@ footer img {
         height: 280px;
     }
 
+    .card button{
+        padding-top: 2px;
+    }
+
     .sobre-card {
-        display: none;
+        /* display: none; */
         height: 300px;
         width: 300px;
         margin-bottom: 100px;
     }
 
     .sobre-card p {
-        font-size: 20px;
+        font-size: 17px;
+    }
+
+    .sobre-card button {
+        padding-top: 15px;
     }
 
     #sobre p {
@@ -942,6 +996,7 @@ footer img {
 
     .banner {
         background-position: center;
+        height: 98vh;
     }
 
     header button {
@@ -1039,6 +1094,10 @@ footer img {
         font-size: 25px;
     }
 
+    .card button {
+        width: 150px;
+    }
+
     .sobre-card {
         width: 200px;
         height: 250px;
@@ -1046,6 +1105,10 @@ footer img {
 
     .sobre-card p {
         font-size: 15px;
+    }
+
+    .sobre-card button {
+        width: 150px;
     }
 
     #sobre h2 {
