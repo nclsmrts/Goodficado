@@ -159,7 +159,7 @@ header button {
 .card {
     height: 585px;
     width: 350px;
-    width: 28%;
+    width: 22%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -189,6 +189,7 @@ header button {
     color: black;
     justify-content: center;
     text-decoration: underline transparent;
+    display: none;
 }
 
 .card a:hover {
